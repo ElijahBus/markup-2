@@ -1,0 +1,444 @@
+:root {
+  --color-yellow: #fbef56;
+  --color-light: #fff;
+  --color-dark-blue: #1a1a3d;
+  --color-dark: #413f3f;
+  --color-light-blue: #e3e7f9;
+  --color-beige: rgb(251, 239, 86, 0.2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hiragino Sans", serif
+}
+
+.section-one {
+  background-color: var(--color-dark-blue);
+
+  width: 100%;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-one__banner {
+  background-color: var(--color-yellow);
+
+  height: calc(100vh - 100px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-one__banner h1 {
+  font-size: 4.25rem;
+}
+
+.section-one__action {
+  background-color: var(--color-yellow);
+  color: var(--color-dark);
+
+  margin-top: 2.313rem;
+  margin-bottom: 2.563rem;
+  width: 49.75rem;
+  height: 6.938rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  border: 0.125rem solid var(--color-dark);
+  border-radius: 1.25rem;
+}
+
+.section-two {
+  background-color: var(--color-beige);
+
+  width: 100%;
+  padding: 0 4.563rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-two h2 {
+  text-align: center;
+  margin-top: 5.375rem;
+  margin-bottom: 5.25rem;
+  font-size: 3.063rem;
+}
+
+.section-two__cards {
+  /*width: 62.688rem;*/
+  width: 100%;
+  padding: 0 4.938rem 4.063rem 4.938rem;
+  display: flex;
+  flex-direction: column;
+  gap: 9.75rem;
+}
+
+.section-two__cards .card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 0.375rem solid var(--color-dark-blue);
+}
+
+.section-two__cards .card .card-header {
+  background-color: var(--color-light-blue);
+  width: 100%;
+  display: flex;
+  padding: 3.875rem 0;
+}
+
+.section-two__cards .card .card-header .card-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 3.313rem;
+}
+
+.section-two__cards .card .card-header .card-avatar img {
+  height: 9.375rem;
+  width: 9.375rem;
+}
+
+.section-two__cards .card .card-header .card-avatar span {
+  font-size: 0.938rem;
+  font-weight: 600;
+  margin-top: 1.125rem;
+}
+
+.section-two__cards .card .card-header .description {
+  background-color: var(--color-yellow);
+
+  /*width: 45.563rem;*/
+  flex: 1;
+  height: 10.625rem;
+  margin-right: 1.094rem;
+  border: 0.188rem solid var(--color-dark-blue);
+  border-radius: 2.5rem;
+  font-size: 1.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.section-two__cards .card .card-body {
+  background-color: var(--color-light);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-two__cards .card .card-body p {
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin: 4.625rem 0 5.688rem 0;
+}
+
+.section-three {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3.75rem 6.375rem 3.75rem;
+}
+
+.section-three h2 {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 3.063rem;
+}
+
+.section-three__cards {
+  background-color: var(--color-yellow);
+
+  width: 100%;
+  border: 0.188rem solid var(--color-dark-blue);
+  border-radius: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4.938rem;
+}
+
+.section-three__cards .card {
+  width: 50%;
+  padding: 2.5rem;
+}
+
+.section-three__cards .card:nth-of-type(1),
+.section-three__cards .card:nth-of-type(2){
+  border-bottom: 0.188rem solid var(--color-dark-blue);
+}
+
+.section-three__cards .card:nth-of-type(1),
+.section-three__cards .card:nth-of-type(3){
+  border-right: 0.188rem solid var(--color-dark-blue);
+}
+
+.section-three__cards .card .badge {
+  background-color: var(--color-dark-blue);
+  color: var(--color-light);
+
+  font-size: 1.875rem;
+  font-weight: 600;
+  width: 2.938rem;
+  height: 2.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.063rem solid var(--color-dark-blue);
+  border-radius: 0.625rem;
+}
+
+.section-three__cards .card .badge-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.section-three__cards .card .card-text {
+  font-size: 1.063rem;
+  font-weight: 600;
+  line-height: 1.563rem;
+  margin-top: 1.25rem;
+}
+
+.section-four {
+  background-color: var(--color-beige);
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3.75rem 6.375rem 3.75rem;
+}
+
+.section-four h2 {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 3.063rem;
+}
+
+.section-four__cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.313rem;
+  margin-top: 4.938rem;
+}
+
+.section-four__cards .card {
+  background-color: var(--color-light);
+
+  width: 48%;
+  padding: 2.5rem;
+  border: 0.188rem solid var(--color-dark-blue);
+  border-radius: 1.25rem;
+}
+
+.section-four__cards .card .headline {
+  text-align: center;
+  font-weight: 600;
+}
+
+.section-four__cards .card .headline:nth-of-type(1) {
+  font-size: 2.25rem;
+}
+
+.section-four__cards .card .headline:nth-of-type(2) {
+  font-size: 1.25rem;
+}
+
+.section-four__cards .card .card-text {
+  font-size: 1.063rem;
+  font-weight: 600;
+  line-height: 1.563rem;
+  margin-top: 1.25rem;
+}
+
+.section-five {
+  background-color: var(--color-yellow);
+
+  width: 100%;
+  padding: 7rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-five h2 {
+  font-size: 3.063rem;
+}
+
+.section-five .groups {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2.125rem;
+}
+
+.section-five .groups .group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-five .groups .group span {
+  background-color: var(--color-light);
+  line-height: 1.375rem;
+  font-size: 0.938rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.063rem;
+  width: 9.625rem;
+}
+
+.section-five .groups .group img {
+  height: 12.5rem;
+}
+
+.section-six,
+.section-seven {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 6.313rem 5.188rem;
+}
+
+.section-six h2 ,
+.section-seven h2{
+  font-size: 2.188rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.section-six .sub-title,
+.section-seven .sub-title {
+  font-size: 2.5rem;
+  margin: 2.875rem 0;
+  font-weight: 600;
+}
+
+.section-six .text,
+.section-seven .text{
+  font-size: 1.438rem;
+}
+
+.section-seven .image {
+  width: 48.938rem;
+  height: 35.563rem;
+  margin-top: 3.813rem;
+}
+
+.section-eight {
+  background-color: var(--color-yellow);
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5.563rem;
+  text-align: center;
+}
+
+.section-eight h2 {
+  font-size: 3.063rem;
+  font-weight: 600;
+}
+
+.section-eight .sub-title {
+  font-size: 1.438rem;
+  margin: 1.25rem 0;
+}
+
+.section-eight .row-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-eight .row-cards .card {
+  background-color: var(--color-light);
+  border: 0.188rem solid var(--color-dark-blue);
+  border-radius: 1.25rem;
+
+  width: 48%;
+  display: flex;
+  gap: 1.25rem;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.section-eight .row-cards .card p:nth-of-type(1) {
+  font-size: 1.625rem;
+}
+
+.section-eight .row-cards .card p:nth-of-type(2) {
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.section-eight .row-cards .card .price {
+  background-color: var(--color-yellow);
+
+  font-size: 3.313rem;
+}
+
+.section-eight .single-card {
+  background-color: var(--color-light);
+  border: 0.188rem solid var(--color-dark-blue);
+  border-radius: 1.25rem;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem;
+  margin-top: 3.375rem;
+}
+
+.section-eight .single-card p {
+  font-size: 1.313rem;
+}
+
+.section-eight .single-card .important {
+  background-color: var(--color-yellow);
+
+  width: fit-content;
+  font-size: 3.313rem;
+  margin: 0.625rem 0;
+  padding: 0 0.625rem;
+}
+
+.section-nine {
+  background-color: var(--color-dark);
+
+  width: 100%;
+  padding: 4.5rem 4.5rem 11.313rem 4.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.section-nine button {
+  background-color: var(--color-yellow);
+
+  height: 6.938rem;
+  width: 49.75rem;
+  border-radius: 1.25rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+}
